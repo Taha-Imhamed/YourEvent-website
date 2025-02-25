@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tickets</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+     <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h1>YourEvent</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="tickets.html">Tickets</a></li>
+      
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Discover Amazing Events Near You</h2>
+      <p>Find and book tickets for concerts, festivals, and more.</p>
+      <a href="events.html" class="btn">Explore Events</a>
+    </div>
+  </section>
+
+  <!-- Tickets Section -->
+  <section class="tickets">
+    <h2>Book Your Tickets</h2>
+    <p>Choose your event and secure your spot today.</p>
+    <form class="ticket-form">
+      <label for="event-select">Select Event:</label>
+      <select id="event-select">
+        <option value="concert">Concert Night</option>
+        <option value="festival">Music Festival</option>
+        <option value="exhibition">Art Exhibition</option>
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" min="1" max="10" required>
+
+      <button type="submit" class="btn">Buy Tickets</button>
+    </form>
+  </section>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+      color: #333;
+    }
+
+    .tickets {
+      padding: 20px;
+      background-color: #d55f16;
+      max-width: 600px;
+      margin: 50px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .tickets h2 {
+      margin-bottom: 20px;
+      color: #000000d8;
+    }
+
+    .tickets p {
+      margin-bottom: 20px;
+      color: #000000;
+    }
+
+    .ticket-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .ticket-form label {
+      font-size: 1em;
+      color: #000000;
+    }
+
+    .ticket-form select, .ticket-form input {
+      width: 100%;
+      max-width: 300px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff9900;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</body>
+</html>
